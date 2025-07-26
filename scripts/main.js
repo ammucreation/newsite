@@ -36,18 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
   // Load products
   loadProducts();
 });

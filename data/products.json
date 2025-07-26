@@ -6,8 +6,7 @@
     "price": "₹150",
     "originalPrice": "₹300",
     "description": "Engagement Full Event Album, Size (12 X 36), Resolution (300dpi), Total PSD (30 PSD), 7.5 GB",
-    "buyLink": "https://u.payu.in/PAYUMN/4r16jM8EAled",
-    "demoLink": "https://drive.google.com/file/d/1xlDgBHz6ep2OZ2a1Dui_JesppGa7yRqr/view",
+    "pageLink": "/products/engagement-full-album",
     "tags": ["engagement", "12x36", "full event", "album", "psd"]
   },
   {
@@ -17,8 +16,7 @@
     "price": "₹299",
     "originalPrice": "₹1200",
     "description": "Size (15 X 24), Resolution (300dpi), Total PSD (100 PSD), 8.5 GB",
-    "buyLink": "https://u.payu.in/PAYUMN/7rZ6VqwrgiEv",
-    "demoLink": "https://drive.google.com/file/d/1DuZXeid_YVP6fGhtwPWtE0wAAP8dfoDv/view",
+    "pageLink": "/products/new-15x24-album",
     "tags": ["15x24", "new", "wedding", "album", "premium"]
   },
   {
@@ -28,9 +26,7 @@
     "price": "₹299",
     "originalPrice": "₹1200",
     "description": "Size (12 X 36), Resolution (300dpi), Total PSD (100 PSD), 8.5 GB",
-    "buyLink": "https://u.payu.in/PAYUMN/7rZ6VqwrgiEv",
-    "demoLink": "https://drive.google.com/file/d/1DuZXeid_YVP6fGhtwPWtE0wAAP8dfoDv/view",
+    "pageLink": "/products/new-12x36-album",
     "tags": ["12x36", "new", "wedding", "album", "premium"]
   }
-
 ]
