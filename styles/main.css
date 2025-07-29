@@ -30,11 +30,22 @@ body {
 
 /* Navigation */
 nav {
-  background: white;
+  background: rgb(255, 255, 255);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
+  padding: 5px;  
+}
+
+.logo{
+  font-size: large;
+  font-weight: 600;
+  color: var(--dark);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.8;
 }
 
 .navbar {
@@ -43,6 +54,8 @@ nav {
   align-items: center;
   padding: 1rem 0;
   position: relative;
+  height: 50px;
+  padding: 25px;
 }
 
 .nav-links-container {
@@ -237,6 +250,7 @@ nav {
   font-size: 0.8rem;
   cursor: pointer;
   transition: var(--transition);
+  
 }
 
 .tag-item:hover {
@@ -246,7 +260,7 @@ nav {
 
 .tag-item.active {
   background-color: var(--primary);
-  color: var(--white);
+  color: white
 }
 
 
@@ -428,6 +442,71 @@ nav {
         padding: 0 20px;
       }
     }
+
+
+
+
+
+
+/* Pagination Styles - Next and preive */
+  .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+  padding-top: 25px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  min-width: 40px;
+  background: #f8f9fa;
+  color: #333;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #e9ecef;
+}
+
+.pagination button.active {
+  background: var(--primary);
+  color: white;
+  border-color:var(--primary);
+}
+
+.pagination button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.ellipsis {
+  padding: 8px;
+}
+
+.page-info {  
+  margin-left: 10px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .pagination {
+    gap: 3px;
+  }
+  .pagination button {
+    padding: 6px 8px;
+    min-width: 30px;
+  }
+}
+
+
+
 
 
 
@@ -620,9 +699,9 @@ footer {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 70%;
+    width: 60%;
     max-width: 300px;
-    height: 100vh;
+    height: 100%;
     background: white;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     transition: right 0.3s ease;
