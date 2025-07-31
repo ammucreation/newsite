@@ -65,23 +65,22 @@
         <h2>Our Products</h2>
       </div>
       
-      <div class="search-filter-container">
-  <div class="search-box">
-    <input type="text" id="searchInput" placeholder="Search by title, description or tags...">
-    <i class="fas fa-search"></i>
-  </div>
-  <div class="filter-tags">
-    <span class="filter-label">Filter by tags:</span>
-    <div class="tag-list" id="tagList">
-      <!-- Tags will be added dynamically -->
+    <div class="search-filter-container">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search by title, description or tags...">
+      <i class="fas fa-search"></i>
+    </div>
+    <div class="filter-tags">
+      <span class="filter-label">Filter by tags:</span>
+      <div class="tag-list" id="tagList">
+        <!-- Tags will be added dynamically -->
+      </div>
     </div>
   </div>
-</div>
 
-      <div class="products-grid" id="products-container">
-        <!-- Products loaded dynamically -->
-      </div>
-
+   
+      
+      <!-- Products will be dynamically loaded here -->
       <div id="products-container"></div>
       <div id="pagination" class="pagination"></div>
 
@@ -111,7 +110,7 @@
         <p class="footer-tagline">Your one-stop shop for premium wedding album templates</p>
         
         <div class="contact-info">
-          <p><i class="fas fa-phone-alt"></i> +91 70946 09411</p>
+          <p><i class="fas fa-phone-alt"></i> <a href="tel:+917094609411">+91 70946 09411</a></p>
           <p><i class="fas fa-envelope"></i> ammucreation.in@gmail.com</p>
         </div>
       </div>
@@ -162,10 +161,12 @@
 
         <div class="newsletter">
           <h5>Subscribe to Newsletter</h5>
-          <form class="newsletter-form">
-            <input type="email" placeholder="Your email address" required>
-            <button type="submit" class="btn-subscribe">Subscribe</button>
-          </form>
+          <div class="newsletter-form">
+          <input type="email" placeholder="Your email address">
+          <button class="btn-subscribe">Subscribe</button>
+        </div>
+                   
+
         </div>
       </div>
     </div>
