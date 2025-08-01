@@ -38,14 +38,17 @@ nav {
   padding: 5px;  
 }
 
-.logo{
-  font-size: large;
-  font-weight: 600;
-  color: var(--dark);
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  opacity: 0.8;
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+.logo img {
+  margin-right: 10px;
+  height: 40px;
 }
 
 
@@ -158,32 +161,74 @@ nav {
 
 
 
-/* Marquee style for images */
-        .marquee-wrapper {
-            width: 100%;
-            overflow: hidden;
-            margin: 2rem 0;
-        }
-        .marquee {
-            display: flex;
-            flex-direction: row;
-            animation: marquee 10s linear infinite;
-        }
-        .marquee img {
-            width: 275px;
-            height: 150px;
-            object-fit: cover;
-            margin-right: 20px;
-        }
-        @keyframes marquee {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-            
-        }      
+/* Universal Marquee Style */
+.marquee-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0;
+  background: linear-gradient(to right, #f9fafb, #f1f5f9);
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.marquee-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Outer marquee container */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Inner track (duplicated images scroll continuously) */
+.marquee-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scroll-marquee 10s linear infinite; /* 👈 slow and smooth */
+}
+
+.marquee-track img {
+  width: 275px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+.marquee-track img:hover {
+  transform: scale(1.05);
+}
+
+/* Animation: seamless scroll */
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ✅ Mobile View */
+@media (max-width: 768px) {
+  .marquee-track {
+    gap: 10px;
+    animation: scroll-marquee 10s linear infinite; /* slower on mobile */
+  }
+
+  .marquee-track img {
+    width: 160px;
+    height: 100px;
+  }
+}/* End Universal Marquee Style */
+
+
+
 
 
 

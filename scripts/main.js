@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Pagination variables
   let currentPage = 1;
-  const productsPerPage = 5;
+  const productsPerPage = 6;
   let allProducts = [];
   let filteredProducts = [];
 
