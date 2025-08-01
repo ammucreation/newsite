@@ -43,7 +43,7 @@ nav {
   align-items: center;
   font-size: 18px;
   font-weight: bold;
-  opacity: 0.9;
+  color: var(--primary);
 }
 
 .logo img {
