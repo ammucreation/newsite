@@ -41,14 +41,23 @@ nav {
 .logo {
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: bold;
-  color: var(--primary);
+  color: var(--dark);
 }
-
+.logo span {
+  opacity: 0.9; /* Only the text becomes lighter */
+}
 .logo img {
   margin-right: 10px;
   height: 40px;
+}
+
+/* Mobile view: Hide logo image */
+@media (max-width: 768px) {
+  .logo img {
+    display: none;
+  }
 }
 
 
@@ -500,42 +509,63 @@ nav {
 
 /* ✅ MOBILE VIEW: Smaller layout and fonts */
 @media (max-width: 600px) {
+  /* Make product card padding tighter */
   .product-card {
     padding: 20px;
-    margin: 7px;
+    margin: 8px;
   }
 
+  /* Reduce product image bottom spacing */
+  .product-left img {
+    margin-bottom: 6px;
+    border-radius: 10px;
+  }
+
+  /* Reduce text sizes */
   .product-title {
     font-size: 18px;
+    margin-bottom: 6px;
   }
 
   .product-tag {
-    font-size: 0.65rem;
-    padding: 0.2rem 0.6rem;
+    font-size: 11px;
+    padding: 3px 10px;
   }
 
   .price-new {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .price-old {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .price-off {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .product-info {
     font-size: 12px;
+    margin-bottom: 10px;
   }
 
+  /* Smaller button */
   .view-btn {
     font-size: 14px;
-    padding: 6px 20px;
-    width: 65%;
+    padding: 6px 15px;
+    width: 100%;
   }
-} /* Close ✅ MOBILE VIEW: Smaller layout and fonts */
+
+  .product-tags {
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+
+  .price-row {
+    gap: 10px;
+  }
+}
+ /* Close ✅ MOBILE VIEW: Smaller layout and fonts */
 
 
 
@@ -654,6 +684,7 @@ footer::before {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  
 
   /* Gradient Text */
   background: linear-gradient(90deg, #7c3aed, #10b981, #3b82f6);
