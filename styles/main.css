@@ -639,7 +639,9 @@ nav {
 
 
 
-/* Footer Styles - Modern Alternative */
+
+
+/* Footer Styles Start *********************************************************/
 footer {
   background: #0f172a;
   color: #f8fafc;
@@ -650,7 +652,6 @@ footer {
   font-family: 'Inter', sans-serif;
   position: relative;
   overflow: hidden;
-
  
 }
 
@@ -673,9 +674,6 @@ footer::before {
   z-index: 1;
 }
 
-.footer-col {
-  margin-bottom: 2rem;
-}
 
 .footer-logo {
   font-size: 25px;
@@ -685,7 +683,6 @@ footer::before {
   align-items: center;
   gap: 0.5rem;
   
-
   /* Gradient Text */
   background: linear-gradient(90deg, #7c3aed, #10b981, #3b82f6);
   -webkit-background-clip: text;
@@ -694,17 +691,27 @@ footer::before {
   color: transparent;
 }
 
-.contact-info {
-  background: white;
-  padding-left: 5%;
-  padding-top: 10%;
-  padding-right: 5%;
-  padding-bottom: 5%;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+.footer-tagline {
+  color: #94a3b8;
+  margin-bottom: 1.75rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
+.footer-contact-info {
+  background: rgb(32, 38, 65);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: var(--gray);
+}
 
+.footer-contact-info i {
+  color: #8b5cf6;
+  font-size: 1.1rem;
+  margin: 5px;
+}
 
 p a {
   color: inherit;        /* icon color madiri irukum */
@@ -713,6 +720,7 @@ p a {
 
 p a:hover {
   text-decoration: underline;
+  color: var(--primary)
 }
 
 
@@ -721,12 +729,6 @@ p a:hover {
   font-size: 2.2rem;
 }
 
-.footer-tagline {
-  color: #94a3b8;
-  margin-bottom: 1.75rem;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
 
 .footer-col h4 {
   font-size: 1.25rem;
@@ -742,8 +744,8 @@ p a:hover {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 50px;
-  height: 3px;
+  width: 70px;
+  height: 4px;
   background: linear-gradient(90deg, #8b5cf6, #6366f1);
   border-radius: 3px;
 }
@@ -764,7 +766,7 @@ p a:hover {
 }
 
 .footer-links a {
-  color: #cbd5e1;
+  color: var(--gray);
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 0.95rem;
@@ -778,31 +780,6 @@ p a:hover {
   color: #8b5cf6;
 }
 
-.footer-links a i {
-  font-size: 0.8rem;
-  color: #8b5cf6;
-  transition: transform 0.3s ease;
-}
-
-.footer-links a:hover i {
-  transform: rotate(45deg);
-}
-
-.contact-info p {
-  color: #cbd5e1;
-  margin-bottom: 1rem;
-  font-size: 0.95rem;
-  display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
-  line-height: 1.5;
-}
-
-.contact-info i {
-  color: #8b5cf6;
-  font-size: 1.1rem;
-  margin-top: 0.2rem;
-}
 
 .social-links {
   display: flex;
@@ -821,6 +798,7 @@ p a:hover {
   border-radius: 8px;
   transition: all 0.4s ease;
   font-size: 1.1rem;
+  text-decoration: none;
 }
 
 .social-links a:hover {
@@ -831,7 +809,7 @@ p a:hover {
 }
 
 .newsletter h5 {
-  color: #fff;
+  color: var(--light-gray);
   margin-bottom: 1rem;
   font-size: 1rem;
   font-weight: 500;
@@ -861,7 +839,7 @@ p a:hover {
 }
 
 .newsletter-form input::placeholder {
-  color: #94a3b8;
+  color: var(--gray);
   font-size: 0.9rem;
 }
 
@@ -890,7 +868,7 @@ p a:hover {
   text-align: center;
   padding-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
-  color: #64748b;
+  color: var(--gray);
   font-size: 0.85rem;
   position: relative;
 }
@@ -906,30 +884,6 @@ p a:hover {
   background: linear-gradient(90deg, transparent, #8b5cf6, transparent);
 }
 
-/* Floating elements decoration */
-.footer-decoration {
-  position: absolute;
-  opacity: 0.05;
-  z-index: 0;
-}
-
-.footer-decoration.circle {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 10px solid #8b5cf6;
-  top: -100px;
-  right: -100px;
-}
-
-.footer-decoration.square {
-  width: 150px;
-  height: 150px;
-  border: 8px solid #3b82f6;
-  bottom: 50px;
-  left: -50px;
-  transform: rotate(45deg);
-}
 
 @media (max-width: 600px) {
   .newsletter-form {
@@ -942,15 +896,13 @@ p a:hover {
   .newsletter-form input[type="email"],
   .newsletter-form .btn-subscribe {
     width: 100%;
-    height: 40px; /* make input and button taller */
   }
 
   .btn-subscribe {
     text-align: center;
+    padding: 13px;
   }
-}
-
-/* Close Footer Styles */
+}/* Close Footer Styles ##################################################################################################*/
 
 
 
